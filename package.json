@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/IlonaBazyk/portfolio#readme",
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "gulp": "^3.9.1",

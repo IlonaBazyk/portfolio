@@ -1,0 +1,21 @@
+// ---------------------------
+// Layouts and containers
+// ---------------------------
+
+div, p, section, footer, header, aside {
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: $mainContainer;
+  padding: $containerVerIndent $containerHorIndent;
+  margin: 0 auto;
+
+  @media (max-width: $screen-md){
+    padding: 2rem 3%;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+}
