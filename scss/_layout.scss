@@ -19,3 +19,11 @@ div, p, section, footer, header, aside {
 .circle {
   border-radius: 50%;
 }
+
+.hexagon {
+	margin: 0 auto;
+	width: 130px;	
+	height: 130px;
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
