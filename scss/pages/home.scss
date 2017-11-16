@@ -66,32 +66,83 @@
       margin-bottom: 4rem;
     }
   }
-
+  p {
+    color: #3a9c61;
+    font-family: "Myriad Pro";
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+  }
   .hero-title {
     font-size: 4.8rem;
     color: #fff;
     margin-bottom: 8rem;
-    line-height: 1.4;
-    span {
     text-transform: uppercase;
     color:$grayShade;
-  }
 
-  @media (max-width: $screen-md){
-    font-size: 3.4rem;
-    margin-bottom: 5rem;
-  }
 
-  @media (max-width: $screen-sm){
-    font-size: 2.4rem;
-    margin-bottom: 3rem;
+    @media (max-width: $screen-md){
+      font-size: 3.4rem;
+      margin-bottom: 5rem;
+    }
+
+    @media (max-width: $screen-sm){
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+    }
   }
-}
 }
 
 .services {
-  
+  p {
+    color: #65615d;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 }
 
+.about_me {
+  h3 + p {
+    color: #65615d;
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+  }
+ .bold, p {
+    color: #241e18;
+font-size: 1.8rem;
+ text-align: left;
+ margin-bottom: 4.5rem;
+  }
+}
 
+.my_work {
+  .work {
+    display: flex;
+    border:2px solid $prime;
+    margin: auto;
+    height: 250px;
+
+     &:hover .btn-prime {
+    animation: rotateIn 0.5s linear;
+  -webkit-animation: rotateIn 0.5s linear;
+  }
+    
+  }
+  .work1 {
+    background: url(../../img/weather.png) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  .work2 {
+    background: url(../../img/to-do_list.png) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  a {
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
 

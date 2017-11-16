@@ -1,3 +1,17 @@
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
 %btn {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -17,16 +31,17 @@
   @media (max-width: $screen-xs){
     width: 100%;
   }
-
+  
 }
 
 .btn-prime {
   @extend %btn;
-  background: $prime;
-  border: 2px solid $prime;
+  background: transparent;
+  border: 3px solid $prime;
+  color: $prime;
 
   &:hover {
-    background: $primeShade;
+    background: transparent;
   }
 }
 

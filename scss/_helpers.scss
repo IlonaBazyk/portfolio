@@ -49,6 +49,9 @@
   display: inline-block;
 }
 
+.flex {
+  display: flex;
+}
 // Aligning Elements
 // -------------------------
 
@@ -72,6 +75,11 @@
 .text-justify {
   text-align: justify;
 }
+
+.bold {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
 
 .mobile-text-center {
   @media (max-width: 992px) {
