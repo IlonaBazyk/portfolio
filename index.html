@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/pages/home.css">
 </head>
 <body>
@@ -15,11 +16,11 @@
             </div>
             <nav class="hero-nav pull-right _nav">
                 <ul class="list-unstyled">
-                    <li class="hero-nav-item"><a href="">home</a></li>
-                    <li class="hero-nav-item"><a href="">about</a></li>
-                    <li class="hero-nav-item"><a href="">services</a></li>
-                    <li class="hero-nav-item"><a href="">portfolio</a></li>
-                    <li class="hero-nav-item"><a href="">contact</a></li>
+                    <li class="hero-nav-item active"><a href="#">home</a></li>
+                    <li class="hero-nav-item"><a href="#about">about</a></li>
+                    <li class="hero-nav-item"><a href="#services">services</a></li>
+                    <li class="hero-nav-item"><a href="#portfolio">portfolio</a></li>
+                    <li class="hero-nav-item"><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,160 +34,337 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <div class="text-right mobile-text-center">
-                        <div class="btn-outline btn-large">learn more</div>
+                        <div class="btn-outline btn-large" type="button" data-toggle="modal" data-target="#learn-more">learn more</div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="text-left mobile-text-center">
-                        <div class="btn-second btn-large" data-toggle="modal" data-target="#contactMe">contact me</div>
+                        <div class="btn-second btn-large" type="button" data-toggle="modal" data-target="#contact-me">contact me</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="services bg-white">
+    <section id="services" class="services bg-white">
         <div class="wrap section text-center">
-            <h1 class="h1">My Services</h1>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+            <h1 class="h1 title">My Services</h1>
+            <div class="h5">The most useful technologies for Webdesign</div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-                    <div class="hexagon">
-                     <img width="130" src="img/html5.png" alt="">
-                 </div>
-                 <h3>HTML5</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-             </div>
-             <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-                <div class="hexagon">
-                    <img width="130" src="img/css3.png" alt="">
-                </div>
-                <h3>CSS3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/js.png" alt="">
-             </div>
-             <h3>JavaScript</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/jquery.png" alt="">
-             </div>
-             <h3>jQuery</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/ajax.png" alt="">
-             </div>
-             <h3>Ajax</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/angular.png" alt="">
-             </div>
-             <h3>Angular</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/github.png" alt="">
-             </div>
-             <h3>GitHub</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/gulp.jpg" alt="">
-             </div>
-             <h3>Gulp</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/sass.png" alt="">
-             </div>
-             <h3>Sass</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/bootstrap.png" alt="">
-             </div>
-             <h3>Bootstrap</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/photoshop.jpg" alt="">
-             </div>
-             <h3>Photoshop</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-             <div class="hexagon">
-                 <img width="130" src="img/jira.png" alt="">
-             </div>
-             <h3>Jira</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto, eligendi fugit libero quisquam nesciunt.</p>
-         </div>
-     </div>
- </div>
-</section>
-<section class="about_me bg-gray">
+                   <div class="mb-4">
+                       <img class="circle" src="img/html5.png" alt="HTML5">
+                   </div>
+                   <h3 class="h3 bold mb-4">HTML5</h3>
+                   <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/css3.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">CSS3</h3>
+                   <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" width="165" src="img/js.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">JavaScript</h3>
+                   <p>JavaScript is a high-level, dynamic, weakly typed, object-based, multi-paradigm, and interpreted programming language.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/jquery.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">jQuery</h3>
+                   <p>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/ajax.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">Ajax</h3>
+                   <p>Ajax is a set of Web development techniques using many Web technologies on the client side to create asynchronous Web applications. </p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/angular.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">Angular</h3>
+                   <p>AngularJS is a JavaScript-based open-source front-end web application framework for developing single-page applications.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/github.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">GitHub</h3>
+                   <p>GitHub is a Web-based Git version control repository hosting service. It is mostly used for computer code.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/gulp.jpg" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">Gulp.js</h3>
+                   <p>Gulp.js is an open-source JavaScript toolkit, used as a streaming build system in front-end web development.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/sass.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">SASS</h3>
+                   <p>Sass (syntactically awesome stylesheets) is a scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/bootstrap.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">Bootstrap</h3>
+                   <p>Bootstrap is a free and open-source front-end web framework for designing websites and web applications.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/photoshop.jpg" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">Photoshop</h3>
+                   <p>Adobe Photoshop is a raster graphics editor developed and published by Adobe Systems for macOS and Windows.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                   <div class="mb-4">
+                       <img class="circle" src="img/jira.png" alt="">
+                   </div>
+                   <h3 class="h3 bold mb-4">JIRA</h3>
+                   <p>Jira is a proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions. </p>
+               </div>
+           </div>
+       </div>
+   </section>
+   <section id="about" class="about_me bg-gray">
     <div class="wrap section text-center">
-        <h1 class="h1">About me</h1>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+        <h1 class="h1 title">About me</h1>
+        <div class="h5">More information about me</div>
         <div class="row ">
-            <div class="col-md-4">
-                <div class="hexagon">
-                    <img src="img/photo.jpg" alt="" width="130">
+            <div class="col-md-4 mb-5">
+                <div class="">
+                    <img class="circle" src="img/photo.jpg" alt="" width="200">
                 </div>
                 <h3>Ilona Bazyk</h3>
-                <p>Frontend Developer</p>
+                <div class="profecion">Frontend Developer</div>
             </div>
             <div class="col-md-4">
-                <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, debitis!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus rerum aut placeat deleniti sapiente aspernatur laboriosam, eaque esse odio.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus rerum aut placeat deleniti sapiente aspernatur laboriosam, eaque esse odio.</p>
+                <p class="bold">Hello! My name is Ilona.<br> I'm 25 years old.</p>
+                <p>I am a novice frontend developer. 
+                    I spend a lot of time learning the basics of web development by myself.
+                    I improving my knowledge in the field of web development by reading books and articles and watching video.</p>
+                    <p>I try to keep up with the trends and achievements in the industry.
+                    It is very interesting for me to solve difficult tasks, as this stimulates me to develop.I like not only the result but the process of creating web applications. </p>
+                
             </div>
             <div class="col-md-4">
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus rerum aut placeat deleniti sapiente aspernatur laboriosam, eaque esse odio.</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusamus rerum aut placeat deleniti sapiente aspernatur laboriosam, eaque esse odio.</p>
-         </div>
-     </div>
- </div>
+                 <p>At the moment, I have several completed projects that confirm my skills.</p>
+              
+               <p>The best company for me in which I can deepen my knowledge and contribute to the development of quality product.</p>
+               <p>As for technology, I'm especially interested in the deepening in the programming language such as JavaScript.</p>
+           </div>
+       </div>
+   </div>
 </section>
-<section class="my_work bg-white">
- <div class="wrap section text-center">
-    <h1 class="h1">My Work</h1>
-    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-    <div class="row flex">
-        <div class="col-md-3 work work1">
-            <a class="btn-large btn-prime" href="">see project</a>
+<section id="portfolio" class="my_work bg-white">
+    <div class="wrap section center">
+       <h1 class="h1 title">My Work</h1>
+       <div class="h5">These are different websites made by me</div>
+       <div class="row">
+        <div class="col-md-4 col-sm-6 mb-3 _work">
+            <div class=" work work1">
+                <a class="btn-large btn-prime" href="">see project</a>
+            </div>
         </div>
-        <div class="col-md-3 work work2">
-            <a class="btn-large btn-prime" href="">see project</a>
+        <div class="col-md-4 col-sm-6 mb-3 _work">
+            <div class=" work work2">
+                <a class="btn-large btn-prime" href="">see project</a>
+            </div>
         </div>
-        <div class="col-md-3 work work1">
-            <a class="btn-large btn-prime" href="">see project</a>
+        <div class="col-md-4 col-sm-6 mb-3 _work">
+            <div class=" work work1">
+                <a class="btn-large btn-prime" href="">see project</a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3 _work">
+            <div class=" work work1">
+                <a class="btn-large btn-prime" href="">see project</a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3 _work">
+            <div class=" work work2">
+                <a class="btn-large btn-prime" href="">see project</a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3 _work">
+            <div class=" work work1">
+                <a class="btn-large btn-prime" href="">see project</a>
+            </div>
         </div>
     </div>
+    <button class="btn-large btn-prime _more-projects">see more projects</button>
 </div>
 </section>
-<section class="wrap bg-gray"></section>
-<section class="wrap bg-black"></section>
+<section class="feedback bg-gray">
+    <div class="wrap section text-center">
+        <h1 class="h1 title">What My Clients Say</h1>
+        <div class="h5">These are my clients' feedbacks</div>
+        <div class="row">
+
+            <div class="container">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+
+                  <div class="item active">
+                    <div class="center item-box">
+                        <p class="h4 mb-4">Ilona created an original and attractive site. I was impressed by the speed of implementation, which did not prevent her from making a quality product.</p>
+                        <div class="author">
+                            <img class="circle" src="img/kiril.jpg" alt="">
+                            <p class="h4 bold">Kiril Kovalchuk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="center item-box">
+                       <div class="center item-box">
+                        <p class="h4 mb-4">I was amazed by the "purity" of her code. I had no trouble making technical changes to optimize the site, because the code was as simple and straightforward as possible.</p>
+                        <div class="author">
+                            <img class="circle" src="img/lilia.jpg" alt="">
+                            <p class="h4 bold">Lilia Vadovska</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+               <div class="center item-box">
+                   <div class="center item-box">
+                    <p class="h4 mb-4">Web application was done well and on time, and the result exceeded my expectations. Thank you for the excellent work.</p>
+                    <div class="author">
+                        <img class="circle" src="img/volodymyr.jpg" alt="">
+                        <p class="h4 bold">Volodymyr Makhnitskyi</p>
+                        <span></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<section id="contact" class="contact wrap bg-white center">
+ <h1 class="h1 title">Get in Touch</h1>
+ <div class="h5">Do not hesitate to contact me!</div>
+ <button class="btn-second btn-large" type="button" data-toggle="modal" data-target="#contact-me">contact me</button>
+</section>
+<section class=" footer wrap bg-black">
+    <div class="center">
+        <div class="h5 copiright">© Bazyk I. L., 2017. All rights reserved.</div>
+        <div class="social center">
+            <div class="circle item"><a href="https://www.facebook.com/profile.php?id=100002472804009"><i class="fa  fa-facebook" aria-hidden="true"></i></a></div>
+            <div class="circle item"><a href="https://www.linkedin.com/in/ilona-bazyk-78586b151/"><i class="fa  fa-linkedin" aria-hidden="true"></i></a></div> 
+            <div class="circle item"><a href="https://plus.google.com/u/0/107558262158803310251"><i class="fa  fa-google-plus" aria-hidden="true"></i></a></div>
+            <div class="circle item"><a href="https://github.com/IlonaBazyk"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal "LEARN MORE" -->
+<div id="learn-more" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">About me</h4>
+    </div>
+    <div class="modal-body">
+        <p>Hello! My name is Ilona. I am a novice frontend developer.</p>
+        
+        <p>I like not only the result but the process of creating web applications. 
+            It is very interesting for me to solve difficult tasks, as this stimulates me to develop.</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Modal "CONTACT ME" -->
+<div id="contact-me" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Contact me</h4>
+    </div>
+    <div class="modal-body">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+        </a>
+        <div class="media-body ml-2">
+            <a href="tel:+380971555387"> +380971555387</a>
+        </div>
+    </div>
+        <div class="media">
+          <a class="pull-left" href="#">
+           <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+        <div class="media-body ml-2">
+            <a href="mailto:ilona.bazyk@gmail.com">ilona.bazyk@gmail.com</a>
+        </div>
+    </div>
+    <div class="media">
+          <a class="pull-left" href="#">
+           <i class="fa fa-skype" aria-hidden="true"></i>
+        </a>
+        <div class="media-body ml-2">
+            <a href="skype:rlonka?call">rlonka</a>
+        </div>
+    </div>
+
+        
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+
+</div>
+</div>
 
 
-<script
+<!-- <script
 src="https://code.jquery.com/jquery-2.2.4.min.js"
 integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-crossorigin="anonymous"></script>
+crossorigin="anonymous"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/build.js"></script>
+
 
 </body>
 </html>
