@@ -135,6 +135,9 @@
 }
 
 .services {
+  .row > div {
+    min-height: 400px;
+  }
   h3 {
     color: $darkDarkGray;
   }
