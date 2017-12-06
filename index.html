@@ -7,16 +7,18 @@
     <title>Portfolio</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/pages/animate.css">
 </head>
-<body>
+<body class="">
+<div class="main-content-wrapper">
     <section class="hero bg-black">
         <header class="wrap cf">
-            <div class="logo-name pull-left">Ilona Bazyk</div>
+            <div class="logo-name pull-left wow bounceInLeft" data-wow-delay="0s">Ilona Bazyk</div>
 
             <div class="hamburger pull-right _hamburger">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
-            <nav class="hero-nav pull-right _nav">
+            <nav class="hero-nav pull-right _nav wow bounceInRight" data-wow-delay="0s">
                 <ul class="list-unstyled">
                     <li class="hero-nav-item active"><a href="#">home</a></li>
                     <li class="hero-nav-item"><a href="#about">about</a></li>
@@ -27,18 +29,18 @@
             </nav>
         </header>
         <div class="section wrap text-center">
-            <p>frontend developer</p>
-            <h1 class="hero-title">
+            <p class="wow bounceInDown" data-wow-delay="0.5s">frontend developer</p>
+            <h1 class="hero-title wow zoomIn" data-wow-delay="1s">
                 nice to meet you
             </h1>
 
             <div class="row">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-6 wow zoomInLeft" data-wow-delay="1s">
                     <div class="text-right mobile-text-center">
                         <div class="btn-outline btn-large" type="button" data-toggle="modal" data-target="#learn-more">learn more</div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-6 wow zoomInRight" data-wow-delay="1s">
                     <div class="text-left mobile-text-center">
                         <div class="btn-second btn-large" type="button" data-toggle="modal" data-target="#contact-me">contact me</div>
                     </div>
@@ -49,7 +51,7 @@
 
     <section id="services" class="services bg-white">
         <div class="wrap section text-center">
-            <h1 class="h1 title">My Services</h1>
+            <h1 class="h1 title wow fadeInDown" data-wow-delay="0.3s">My Services</h1>
             <div class="h5">The most useful technologies for Webdesign</div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -141,7 +143,7 @@
    </section>
    <section id="about" class="about_me bg-gray">
     <div class="wrap section text-center">
-        <h1 class="h1 title">About me</h1>
+        <h1 class="h1 title wow fadeInDown" data-wow-delay="0.2s">About me</h1>
         <div class="h5">More information about me</div>
         <div class="row ">
             <div class="col-md-4 mb-5">
@@ -155,7 +157,7 @@
                 <p class="bold">Hello! My name is Ilona.<br> I'm 25 years old.</p>
                 <p>I am a novice frontend developer. 
                     I spend a lot of time learning the basics of web development by myself.
-                    I improving my knowledge in the field of web development by reading books and articles and watching video.</p>
+                    </p>
                     <p>I try to keep up with the trends and achievements in the industry.
                     It is very interesting for me to solve difficult tasks, as this stimulates me to develop.I like not only the result but the process of creating web applications. </p>
                 
@@ -170,7 +172,7 @@
 </section>
 <section id="portfolio" class="my_work bg-white">
     <div class="wrap section center">
-       <h1 class="h1 title">My Work</h1>
+       <h1 class="h1 title wow fadeInDown" data-wow-delay="0.2s">My Work</h1>
        <div class="h5">These are different websites made by me</div>
        <div class="row">
         <div class="col-md-4 col-sm-6 mb-3 _work">
@@ -209,7 +211,7 @@
 </section>
 <section class="feedback bg-gray">
     <div class="wrap section text-center">
-        <h1 class="h1 title">What My Clients Say</h1>
+        <h1 class="h1 title wow fadeInDown" data-wow-delay="0.2s">What My Clients Say</h1>
         <div class="h5">These are my clients' feedbacks</div>
         <div class="row">
 
@@ -269,13 +271,15 @@
 </div>
 </div>
 </section>
-<section id="contact" class="contact wrap bg-white center">
- <h1 class="h1 title">Get in Touch</h1>
+<section id="contact" class="contact bg-white center">
+	<div class="wrap">
+ <h1 class="h1 title wow pulse" data-wow-iteration="110" data-wow-delay="0s">Get in Touch</h1>
  <div class="h5">Do not hesitate to contact me!</div>
  <button class="btn-second btn-large" type="button" data-toggle="modal" data-target="#contact-me">contact me</button>
+	</div>
 </section>
-<section class=" footer wrap bg-black">
-    <div class="center">
+<section class=" footer bg-black">
+    <div class="wrap center">
         <div class="h5 copiright">© Bazyk I. L., 2017. All rights reserved.</div>
         <div class="social center">
             <div class="circle item"><a href="https://www.facebook.com/profile.php?id=100002472804009"><i class="fa  fa-facebook" aria-hidden="true"></i></a></div>
@@ -285,6 +289,7 @@
         </div>
     </div>
 </section>
+</div>
 
 <!-- Modal "LEARN MORE" -->
 <div id="learn-more" class="modal fade" role="dialog">
@@ -364,7 +369,16 @@ crossorigin="anonymous"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/build.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stickystack.min.js"></script>
 
+
+<script>
+  new WOW().init()
+</script>
+<script>
+	$('.main-content-wrapper').stickyStack(); 
+</script>
 
 </body>
 </html>

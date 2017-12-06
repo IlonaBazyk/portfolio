@@ -10,7 +10,15 @@ var gulp = require('gulp'),
     var paths = {
     js : './js/**/*.js',
     jsdir : './js',
-    script : './scripts/**/*.js',
+    plugins : [
+			'scripts/wow.min.js',
+			'scripts/jquery.stickystack.min.js'
+	],
+    script : [ 
+            './scripts/**/*.js',
+            '!scripts/wow.min.js',
+			'!scripts/jquery.stickystack.min.js'
+    ],
     scss : [
         './scss/**/*.scss',
         '!scss/**/*_scsslint_tmp*.scss'
@@ -54,6 +62,11 @@ gulp.task('js:dev', function () {
         .pipe(gulp.dest(paths.jsdir));
 });
 
+gulp.task('plugins', function () {
+    return gulp.src(paths.plugins)
+    .pipe(gulp.dest(paths.jsdir));
+});
+
 gulp.task('js:prod', function () {
     return gulp.src(paths.script)
         .pipe(concat('build.js'))
@@ -73,5 +86,5 @@ gulp.task('watch', function () {
     gulp.watch([paths.html, paths.js]).on('change', browser.reload);
 });
 
-gulp.task('default', ['clean', 'js:dev', 'sass:dev', 'watch']);
+gulp.task('default', ['clean', 'js:dev', 'plugins', 'sass:dev', 'watch']);
 gulp.task('prod', ['clean', 'js:prod', 'sass:prod']);

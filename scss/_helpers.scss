@@ -1,9 +1,9 @@
-// ---------------------------
-// Helper classes
-// ---------------------------
+/* ---------------------------*/
+/* Helper classes*/
+/* ---------------------------*/
 
-// Position
-// ---------------------------
+/* Position*/
+/* ---------------------------*/
 .rel {
   position: relative;
 }
@@ -16,8 +16,8 @@
   position: fixed;
 }
 
-// Float
-// ---------------------------
+/* Float*/
+/* ---------------------------*/
 .pull-left {
   float: left;
 }
@@ -34,8 +34,8 @@
   }
 }
 
-// Display Values
-// -------------------------
+/* Display Values*/
+/* -------------------------*/
 
 .inline {
   display: inline;
@@ -50,10 +50,13 @@
 }
 
 .flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
-// Aligning Elements
-// -------------------------
+/* Aligning Elements*/
+/* -------------------------*/
 
 .center {
   margin: 0 auto;
@@ -86,8 +89,8 @@
   }
 }
 
-// Colors
-// -------------------------
+/* Colors*/
+/* -------------------------*/
 
 .white {
   &.white {
@@ -113,8 +116,8 @@
   }
 }
 
-// Background Colors
-// -------------------------
+/* Background Colors*/
+/* -------------------------*/
 
 .bg-white {
   &.bg-white {
@@ -152,14 +155,14 @@
   }
 }
 
-// Cursor
-// -------------------------
+/* Cursor*/
+/* -------------------------*/
 
 .pointer {
   cursor: pointer;
 }
 
-// Margins
+/* Margins*/
 
 .mb-1 {
   margin-bottom: 1rem;
