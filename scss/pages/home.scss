@@ -192,16 +192,19 @@
             box-shadow: inset 0 0 0 5px $white;
     margin: auto;
     height: 250px;
-
+    
     &:hover .btn-prime {
-      animation: rotateIn 0.5s linear;
-      -webkit-animation: rotateIn 0.5s linear;
+      display: block;
+      border-color: $prime;
+      background-color: $prime;
+      color: #fff;
     }
     
   }
   .work1 {
     background: url(../../img/weather.png) 50% 50% no-repeat;
     background-size: cover;
+    
   }
   .work2 {
     background: url(../../img/to-do_list.png) 50% 50% no-repeat;
@@ -212,7 +215,7 @@
     background-size: cover;
   }
   a {
-    display: block;
+    display: none;
     margin: auto;
     text-transform: uppercase;
     text-decoration: none;
